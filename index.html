@@ -12,23 +12,28 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <link rel="manifest" href="./site.webmanifest">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Address, with a JS file</title>
+    <title>Area and Perimeter, with a JS file</title>
   </head>
   <body>
     <script src="./js/script.js"></script>
-    <h1>Address, with a JS file</h1>
+    <h1>Area and Perimeter of a Rectangle, with a JS</h1>
+    <img src="./image/rectangle.png" alt="rectangle" width="35%" height="auto">
+    <h2>Formulas</h2>
+    <h3>A = L x W</h3>
+    <h3>P = 2 (L + W)</h3>
     <p>
-      <h3>Please enter the following:</h3>
+      Please enter integers for dimensions:
       <form action="javascript:enterClicked()">
-        <label for="age">Street Number</label>
-        <input type="number" id="street-number" placeholder="Street Number"><br><br>
-        <label for="fname">Street Name</label>
-        <input type="text" id="street-name" placeholder="Street Name"><br><br>
-        <input type="submit" value="Enter">
+        <label for="length">Length:</label>
+        <input type="number" id="length" placeholder="length"> cm<br><br>
+        <label for="width">Width:</label>
+        <input type="number" id="width" placeholder="width"> cm<br><br>
+        <input type="submit" value="calculate">
       </form>
     </p>
-    <div id="address-into">
-      <div id="address"></div>
+    <div id="answer-into">
+      <div id="area"></div>
+      <div id="perimeter"></div>
     </div>
   </body>
 </html>
